@@ -5,6 +5,7 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
     BoxCollider2D boxCollider;
+    public static float height = 1f;
     public void Init(float screenWidth, float y)
     {
         // center of screen
@@ -12,6 +13,6 @@ public class Wall : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>() as BoxCollider2D;
         // wide as screen
-        boxCollider.size = new Vector2(screenWidth, 0.1f);
+        boxCollider.size = new Vector2(screenWidth, height);
     }
 }

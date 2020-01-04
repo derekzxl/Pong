@@ -22,8 +22,7 @@ public class Paddle : MonoBehaviour
         this.axis = axis;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float move = Input.GetAxis(axis) * speed;
         rb.velocity = Vector2.up * move * Time.deltaTime * GameManager.frameRate;

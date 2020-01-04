@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
         // create top and bottom walls to bounce ball off of
         Wall topWall = Instantiate(wall) as Wall;
         Wall bottomWall = Instantiate(wall) as Wall;
-        topWall.Init(screenWidth, topRight.y);
-        bottomWall.Init(screenWidth, bottomLeft.y);
+        topWall.Init(screenWidth, topRight.y + Wall.height / 2);
+        bottomWall.Init(screenWidth, bottomLeft.y - Wall.height / 2);
 
         // create score text for each player - player 1 at left and player 2 at right
         canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<RectTransform>();
@@ -58,10 +58,12 @@ public class GameManager : MonoBehaviour
     }
     public void Restart()
     {
+        print("Restart");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Pause()
     {
+        print("Pause");
         timescale ^= 1;
         Time.timeScale = timescale;
     }
