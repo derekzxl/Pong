@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6069760705361953362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6069760705361953361}
+  - component: {fileID: -7586720786294199776}
+  m_Layer: 0
+  m_Name: GM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6069760705361953361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069760705361953362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7586720786294199776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069760705361953362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68724bb379392cd43af05462a054a7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 2260171837242914116, guid: 5d10f3d749cd5b64a9a897a497ad7ebc, type: 3}
+  paddle: {fileID: 439608009876506549, guid: 7a17aac427c088f4996562092c5be75e, type: 3}
+  wall: {fileID: -5830625655660621463, guid: 00ec418c8e8b77b40a73f27227f6d420, type: 3}
+  goal: {fileID: 6098783375349603806, guid: 0064dbed8e4cd144f811449ab2f43bfc, type: 3}
+  canvas: {fileID: 4992011720302754841, guid: 295d620e0f7a6e94e91d881ed2921cc3, type: 3}
+  scoreText: {fileID: 6234082864046084143, guid: 9e71e1d4fc67b0d4a8da611d4f27a41c,
+    type: 3}
